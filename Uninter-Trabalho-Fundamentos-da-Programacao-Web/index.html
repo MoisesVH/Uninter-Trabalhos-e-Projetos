@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisés Viana Honorato</title>
+    <!--linkando a página de estilos ao documento-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--cabeçalho-->
+    <header class="conteiner">
+        <h1>Moisés Viana Honorato</h1>
+    </header>
+    <!--menu-->
+    <nav class="conteiner menu">
+        <ul>
+            <li><a href="#sobremim">Sobre mim</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <!--sessões de conteúdo-->
+    <div class="conteiner">
+        <!--sessão 01: Sobre mim-->
+        <section id="sobremim">
+            <h1>Sobre mim</h1>
+            <p>Olá, tudo bem?</p>
+            <p>Meu nome é Moisés Viana Honorato.</p>
+            <p>Hoje eu tenho 21 anos de idade, nasci em 12 de fevereiro de 2005.</p>
+            <p>Moro atualmente em Brejão dos Negros povoado de Brejo Grande/SE.</p>
+            <p>Sou um jovem determinado a construir minha estabilidae financeira através do desenvolvimento de software. Estou no início da minha jornada na área, dedicando-me diariamente aos estudos com o objetivo de me tornar um profissional de excelência.</p>
+            <p>Nos tempos livres, gosto de descansar e aliviar a mente. Para isso, costumo pescar, jogar, assistir Filmes e series, além de praticar alguns esportes. Entre esses hobbies, a pesca é o minha preferida, embora não seja a atividade que pratico com mais frequência.</p>
+        </section>
+        <!--sessão 02: formações-->
+        <section  id="formacao">
+            <h1>Formações</h1>
+            <p>Estou em desenvolvimento profissional.</p>
+            <p>Possuo a formação do ensino médio completo.</p>
+            <P>Atualmente estou cursando o ensino superio em Análise e Desenvolvimento de Sistemas.</P>
+        </section>
+        <!--sessão 03: portifólio-->
+        <section id="portifolio">
+            <h1>Portifólio</h1>
+            <div class="cards">
+                <!--como não são todos os projetos que desenvolvi que possuem links para acesso precisei criar uma interação diferente nos itens que possuem links, essa interação ocorrer ao colocar o cursor do mouse sobre a imagem-->
+                <div class="img link">
+                    <img src="img/projeto001.jpg" alt="Site de apresentação" onclick="link01()">
+                    <div>
+                        <h2>Site de Apresentação</h2>
+                        <p>Projeto criado ao final da matéria de Fundamentos de Desenvolvimento de Software</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="img/projeto002.jpg" alt="Diagramação de caso de uso">
+                    <div>
+                        <h2>Diagrama de caso de Uso</h2>
+                        <p>Projeto criado ao final da matéria de Análise de Sistemas</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="img/projeto003.jpg" alt="Diagramação de Clases">
+                    <div>
+                        <h2>Diagrama de classes</h2>
+                        <p>Projeto criado ao final da matéria de Análise de Sistemas</p>
+                    </div>
+                </div>
+                <div class="img link">
+                    <img src="img/projeto004.jpg" alt="Design UX" onclick="link02()">
+                    <div>
+                        <h2>Prototipo App Banco</h2>
+                        <p>Projeto criado ao final da matéria de Design de Interação</p>
+                    </div>
+                </div>
+            </div>
+        <!--sessão 04: contato-->
+        </section>
+        <section id="contato">
+            <h1>Contato</h1>
+            <div class="formulario">
+                <form autocomplete="off">
+                    <input type="text" name="nome" id="idNome" placeholder="Nome">
+                    <input type="text" name="email" id="idEmail" placeholder="E-mail">
+                    <textarea name="mensgem" id="idMensagem" placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit" onclick="enviarMensagem()">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <h1>Desenvolvido por Moisés Viana Hororato</h1>
+    </footer>
+    <script src="scripit.js"></script>
+</body>
+</html>
