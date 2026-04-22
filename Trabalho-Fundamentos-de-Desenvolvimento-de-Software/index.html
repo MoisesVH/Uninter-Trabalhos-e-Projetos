@@ -1,0 +1,58 @@
+<!-- 
+Requisitos:
+Um titulo pincipal <h1> com meu nome
+Um parágrafo <p> apresentando uma breve autobriografia (nome, idade, cidade, interesses etc).
+Uma lista não ordenada <ul> com três hobbies mencionados.
+Uma imagem <img> que represente um dos hobbies mencionados.
+Uma tabela <table> que contenha o nome e a imagem de três paises que gostaria de visitar. (tabela com 3 linhas x 2 colunas).
+Um link <a> que leve para um site de interesse do aluno.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho FDS</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="/font/">
+</head>
+<body>
+    <div class="intro">
+        <h1>Moisés Viana Honorato</h1>
+        <p>Olá! Meu nome é Moisés, tenho 20 anos de idade e sou do Brejão dos Negros, povoado de Brejo Grande/SE, tenho o objetivo de engressar na profissão de desenvolvedor de software.</p>
+    </div>
+    <div>
+        <button id="botao">Clique para ver uma mensagem!</button>
+        <p id="msg"></p>
+    </div>
+    <div class="hob">
+    <h1>Hobbies</h1>
+        <ul>
+            <li>Jogar<br><img src="img/jogar.png" alt="imagem de um console antigo, que está representando o item jogar"></li>
+            <li>Pescar<br><img src="/img/pescar.png" alt="imagem de uma vara de pesca, que está representando o item pescar"></li>
+            <li>Assistir filmes, series e animes.<br><img src="/img/assistir.png" alt="imagem de uma tv antiga, que está representando o item assistir"></li>
+        </ul>
+    </div>
+    <div class="tab">
+        <table>
+            <tr>
+                <td class="paises">Canadá:</td>
+                <td class="imagem"><img src="/img/canada.jpg" alt="imagem de paisagem"></td>
+            </tr>
+            <tr>
+                <td class="paises">China:</td>
+                <td class="imagem"><img src="/img/china.jpg" alt="imagem de paisagem"></td>
+            </tr>
+            <tr>
+                <td class="paises">México:</td>
+                <td class="imagem"><img src="/img/mexico.jpg" alt="imagem de paisagem"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="link">
+        <p>Site preferido: <a href="http://www.youtube.com/c/CursoemV%C3%ADdeo">Youtube</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
